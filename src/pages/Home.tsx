@@ -1,69 +1,107 @@
-import { Card } from "@/components/ui/card"
-import { AspectRatio } from "@/components/ui/aspect-ratio"
+import { Github, Linkedin } from 'lucide-react';
 
-export function Home() {
+export default function Home() {
   return (
-    <div className="space-y-8">
-      <section className="text-center space-y-4">
-        <div className="w-48 h-48 mx-auto rounded-full overflow-hidden">
-          {/* Add your professional photo here */}
-          <AspectRatio ratio={1}>
+    <div className="max-w-7xl mx-auto">
+      <section className="py-12 md:py-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
             <img
-              src="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?&w=300&h=300&fit=crop"
-              alt="Placeholder profile"
-              className="object-cover"
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&h=800"
+              alt="Professional photo of Max"
+              className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
             />
-          </AspectRatio>
-        </div>
-        <h1 className="text-4xl font-bold">Your Name</h1>
-        <p className="text-xl text-muted-foreground">Your Tagline</p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-2xl font-semibold">Welcome Video</h2>
-        <AspectRatio ratio={16 / 9}>
-          <div className="w-full h-full bg-muted flex items-center justify-center">
-            Add your welcome video here
           </div>
-        </AspectRatio>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-semibold mb-4">Hobbies</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Card className="p-4">
-            <AspectRatio ratio={16 / 9}>
-              <img
-                src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&h=450&fit=crop"
-                alt="Hobby 1"
-                className="rounded-lg object-cover"
-              />
-            </AspectRatio>
-            <h3 className="text-xl font-semibold mt-4">Hobby 1</h3>
-            <p className="text-muted-foreground">Description of your first hobby</p>
-          </Card>
-          <Card className="p-4">
-            <AspectRatio ratio={16 / 9}>
-              <img
-                src="https://images.unsplash.com/photo-1495563923587-bdc4282494d0?w=800&h=450&fit=crop"
-                alt="Hobby 2"
-                className="rounded-lg object-cover"
-              />
-            </AspectRatio>
-            <h3 className="text-xl font-semibold mt-4">Hobby 2</h3>
-            <p className="text-muted-foreground">Description of your second hobby</p>
-          </Card>
+          <div className="space-y-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+              Welcome to My Professional Portfolio
+            </h1>
+            <p className="text-lg text-gray-600">
+              Hi, I'm Max Rossiter, a Computer Science student at the University of Minnesota Duluth, 
+              expected to graduate in 2025. I'm passionate about software development and creating 
+              innovative solutions.
+            </p>
+            <div className="flex gap-4">
+              <a
+                href="https://linkedin.com/in/maxrossiter"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                <Linkedin size={20} />
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/maxrossiter"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"
+              >
+                <Github size={20} />
+                GitHub
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-    </div>
-  )
-}export function Home() {
-  return (
-    <div>
-      <h1 className="text-4xl font-bold mb-6">Welcome</h1>
-      <p className="text-lg text-muted-foreground">
-        Welcome to my portfolio website. Feel free to explore and learn more about my work.
-      </p>
+
+      <section className="py-12">
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Professional Highlights</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-white p-8 rounded-xl shadow-lg">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Technical Skills</h3>
+            <ul className="space-y-2 text-gray-600">
+              <li>• Full-stack Development</li>
+              <li>• Python & Java Programming</li>
+              <li>• Web Technologies (HTML, CSS, JavaScript)</li>
+              <li>• Database Management</li>
+            </ul>
+          </div>
+          <div className="bg-white p-8 rounded-xl shadow-lg">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Current Focus</h3>
+            <p className="text-gray-600 mb-2">Currently working on advanced coursework in:</p>
+            <ul className="space-y-2 text-gray-600">
+              <li>• Software Engineering</li>
+              <li>• Data Structures & Algorithms</li>
+              <li>• Web Development</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12">
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">My Hobbies</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=800&h=400"
+              alt="Photography"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Photography</h3>
+              <p className="text-gray-600">
+                Capturing moments and perspectives through my lens, specializing in landscape 
+                and street photography.
+              </p>
+            </div>
+          </div>
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=800&h=400"
+              alt="Rock Climbing"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Rock Climbing</h3>
+              <p className="text-gray-600">
+                Challenging myself both physically and mentally while exploring beautiful 
+                outdoor locations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
