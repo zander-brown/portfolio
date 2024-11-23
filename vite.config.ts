@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/', // Root level since this is username.github.io
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
