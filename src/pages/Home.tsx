@@ -8,7 +8,7 @@ export default function Home() {
           <div>
             <img
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&h=800"
-              alt="Professional photo of Max"
+              alt="Professional photo of Zander"
               className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
             />
           </div>
@@ -17,13 +17,13 @@ export default function Home() {
               Welcome to My Professional Portfolio
             </h1>
             <p className="text-lg text-gray-600">
-              Hi, I'm Max Rossiter, a Computer Science student at the University of Minnesota Duluth, 
+              Hi, I'm Zander Brown, a Computer Science student at the University of Minnesota Duluth, 
               expected to graduate in 2025. I'm passionate about software development and creating 
               innovative solutions.
             </p>
             <div className="flex gap-4">
               <a
-                href="https://linkedin.com/in/maxrossiter"
+                href="https://linkedin.com/in/zanderbrown"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
@@ -32,7 +32,7 @@ export default function Home() {
                 LinkedIn
               </a>
               <a
-                href="https://github.com/maxrossiter"
+                href="https://github.com/zanderbrown"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"

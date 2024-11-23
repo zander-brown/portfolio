@@ -14,6 +14,8 @@ function App() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  console.log("App component is being rendered");
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
       <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
@@ -38,7 +40,7 @@ function App() {
           <Music size={20} />
           {isMusicPlaying ? 'Pause Music' : 'Play Music'}
         </button>
-        <p className="text-sm text-gray-500">&copy; 2024 Max Rossiter</p>
+        <p className="text-sm text-gray-500">&copy; 2024 Zander Brown</p>
       </div>
     </div>
   );
