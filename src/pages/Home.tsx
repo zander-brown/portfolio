@@ -57,4 +57,13 @@ export function Home() {
       </section>
     </div>
   )
+}export function Home() {
+  return (
+    <div>
+      <h1 className="text-4xl font-bold mb-6">Welcome</h1>
+      <p className="text-lg text-muted-foreground">
+        Welcome to my portfolio website. Feel free to explore and learn more about my work.
+      </p>
+    </div>
+  );
 }

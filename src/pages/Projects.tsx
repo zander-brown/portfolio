@@ -91,4 +91,13 @@ export function Projects() {
       </section>
     </div>
   )
+}export function Projects() {
+  return (
+    <div>
+      <h1 className="text-4xl font-bold mb-6">Projects</h1>
+      <p className="text-lg text-muted-foreground">
+        Here you can find a collection of my personal and professional projects.
+      </p>
+    </div>
+  );
 }

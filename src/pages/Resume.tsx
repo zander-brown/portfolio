@@ -105,4 +105,13 @@ export function Resume() {
       </section>
     </div>
   )
+}export function Resume() {
+  return (
+    <div>
+      <h1 className="text-4xl font-bold mb-6">Resume</h1>
+      <p className="text-lg text-muted-foreground">
+        This page will contain my professional experience, education, and skills.
+      </p>
+    </div>
+  );
 }

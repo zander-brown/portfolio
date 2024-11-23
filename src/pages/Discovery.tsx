@@ -91,4 +91,13 @@ export function Discovery() {
       </section>
     </div>
   )
+}export function Discovery() {
+  return (
+    <div>
+      <h1 className="text-4xl font-bold mb-6">Discovery</h1>
+      <p className="text-lg text-muted-foreground">
+        Explore and discover new content and features here.
+      </p>
+    </div>
+  );
 }

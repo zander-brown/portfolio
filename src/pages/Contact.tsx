@@ -76,4 +76,13 @@ export function Contact() {
       </div>
     </div>
   )
+}export function Contact() {
+  return (
+    <div>
+      <h1 className="text-4xl font-bold mb-6">Contact</h1>
+      <p className="text-lg text-muted-foreground">
+        Get in touch with me through the contact information provided here.
+      </p>
+    </div>
+  );
 }

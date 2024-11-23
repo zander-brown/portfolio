@@ -77,4 +77,13 @@ export function Game() {
       </section>
     </div>
   )
+}export function Game() {
+  return (
+    <div>
+      <h1 className="text-4xl font-bold mb-6">Game</h1>
+      <p className="text-lg text-muted-foreground">
+        This is where an interactive game or demo will be displayed.
+      </p>
+    </div>
+  );
 }

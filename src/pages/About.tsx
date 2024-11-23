@@ -67,4 +67,14 @@ export function About() {
       </section>
     </div>
   )
+}export function About() {
+  return (
+    <div>
+      <h1 className="text-4xl font-bold mb-6">About Me</h1>
+      <p className="text-lg text-muted-foreground">
+        This is the about page. Here you can share information about yourself,
+        your background, skills, and interests.
+      </p>
+    </div>
+  );
 }
