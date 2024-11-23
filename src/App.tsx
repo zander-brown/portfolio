@@ -14,6 +14,8 @@ function App() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  console.log("App component is being rendered");
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
       <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
